@@ -16,16 +16,13 @@ class calc():
         return self.a / self.b
     def rem(self):
         return self.a % self.b
-    
-    
-    
 
 while True:
-    ext = input(print("Do you want to exit? "))
-    if ext.islower() == 'yes':
+    ext = input("Do you want to exit? ")
+    if ext == 'yes':
         break
-    elif ext.islower() == 'no':
-        continue
+    elif ext == 'no':
+        pass
     a = int(input("Enter first number"))
     b = int(input("Enter Second number"))
     obj=calc(a,b)
@@ -43,8 +40,7 @@ while True:
     elif choice == 4:
         print("Result: ",obj.div())
     elif choice == 5:
-        print(("Result: ",obj.rem())
+        print("Result: ",obj.rem())
     else:
         print("invalid input")
 print()
-#hi
